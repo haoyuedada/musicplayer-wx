@@ -1,0 +1,45 @@
+<view class="main" style="background-image:url('{{bgimg}}')">
+</view>
+<!--光盘-->
+<view class="guangpan">
+  <view>
+    <image mode="widthFix" src="{{bgimg}}"></image>
+  </view>
+</view>
+<!--menus1-->
+<view class="menus">
+  <view class='action-item'>
+      <image src='../../img/cm2_play_icn_love@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_play_icn_dld@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_play_icn_cmt_num@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_play_icn_more@2x.png' />
+  </view>
+</view>
+<!--slide-->
+<view class="slide">
+  <progress stroke-width="1"></progress>
+</view>
+<!--menus2-->
+<view class="menus2">
+  <view class='action-item'>
+      <image src='../../img/cm2_play_icn_love@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_play_btn_prev@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_fm_btn_play@2x.png' style="width:200rpx;height:200rpx;position:relative;top:-53rpx;"/>
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_fm_btn_next@2x.png' />
+  </view>
+  <view class='action-item'>
+      <image src='../../img/cm2_icn_list@2x.png' />
+  </view>
+</view>

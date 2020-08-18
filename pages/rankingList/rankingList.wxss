@@ -63,5 +63,11 @@
   height: 20%;
 }
 .guanfang_list>text{
-  width: 100%;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  letter-spacing: 2px;
 }

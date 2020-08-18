@@ -48,8 +48,14 @@
   right: 15px;
 }
 .song_name>text{
-  font-size: 37rpx;
+  font-size: 35rpx;
   letter-spacing: 2px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
 }
 .youtube{
   position: relative;
@@ -73,6 +79,7 @@
   padding-top: 12rpx;
   margin-top: 18rpx;
   color: #878789;
+  letter-spacing: 1px;
 }
 .iconfont{
   font-size: 61rpx;

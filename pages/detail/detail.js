@@ -29,6 +29,18 @@ Page({
           }
     })
   },
+  newView:function(e){
+    let _this = this;
+    let id = e.currentTarget.dataset.id;
+    let picurl = e.currentTarget.dataset.url;
+    wx.setStorage({
+      key:'picUrl',
+      data:picurl
+    });
+    wx.navigateTo({
+      url: '../player/player?picUrl='+picurl+'&id='+id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

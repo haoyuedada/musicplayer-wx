@@ -30,7 +30,7 @@
           <text>{{index+1 < 10 ? '0'+(index+1) : index+1}}</text>
         </view>
         <!--名字-->
-        <view class="song_name" data-id="{{item.id}}">
+        <view class="song_name" data-id="{{item.id}}" data-url="{{item.al.picUrl}}" bindtap="newView">
           <text>{{ item.name }}</text>
           <view>
             <text class="sq">SQ</text>

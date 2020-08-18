@@ -20,7 +20,7 @@
     </view>
     <view class="guanfang_main">
       <view class="guanfang_item" wx:for="{{guanfang}}" wx:key="index">
-        <view class="guanfang_img" data-id="{{item.id}}" bindtap="openNewView">
+        <view class="guanfang_img" data-id="{{item.id}}" data-imgurl="{{item.al.picUrl}}" bindtap="openNewView">
           <image mode="widthFix" src="{{item.coverImgUrl}}"></image>
         </view>
         <view class="guanfang_right">

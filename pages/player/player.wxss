@@ -1,0 +1,75 @@
+page{
+  width:100%;
+  height: 100%;
+}
+.main{
+  height: 100%;
+  width:100%;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  filter: blur(40px);
+  position: absolute;
+}
+.guangpan{
+  top: 24%;
+  position: relative;
+  text-align: center;
+}
+.guangpan>view{
+  width: 500rpx;
+  display: inline-block;
+  height: 500rpx;
+}
+.guangpan>view>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 250px;
+  transition: 0.5s;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0);
+    }
+  100%{
+      transform:rotate(360deg);
+  }
+}
+.menus{
+  height: 8%;
+  top: 43%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.menus2{
+  height: 8%;
+  top: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.menus image{
+  width: 100rpx;
+  height: 100rpx;  
+}
+.menus2 image{
+  width: 100rpx;
+  height: 100rpx;  
+}
+.slide{
+  position: relative;
+  top: 46%;
+}
+.slide>progress{
+  width: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center ;
+}

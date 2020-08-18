@@ -1,9 +1,9 @@
 {
-  "pages":[ 
-    "pages/index/index",
+  "pages":[
     "pages/rankingList/rankingList",  
-    "pages/detail/detail",
-    "pages/player/player",
+    "pages/player/player", 
+    "pages/index/index",
+    "pages/detail/detail", 
     "pages/logs/logs"
   ],
   "tabBar": {
