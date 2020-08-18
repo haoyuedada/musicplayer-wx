@@ -1,0 +1,51 @@
+<view class="main">
+  <view class="main_header">
+    <view class="header_img">
+      <image mode="scaleToFill" src="{{bg}}"></image>
+    </view>
+    <view class="header_icon">
+      <view class="icon_item">
+        <view class="iconfont icon-pinglun"></view>
+        <text>24.7万</text>
+      </view>
+      <view class="icon_item">
+        <view class="iconfont icon-fenxiang"></view>
+        <text>30800</text>
+      </view>
+      <view class="icon_item">
+        <view class="iconfont icon-xiazai"></view>
+        <text>下载</text>
+      </view>
+      <view class="icon_item">
+        <view class="iconfont icon-duoxuan"></view>
+        <text>多选</text>
+      </view>
+    </view>
+  </view>
+  <view class="main_body">
+    <view wx:for="{{songList}}" wx:key="index">
+      <view class="song_item">
+        <!--序号-->
+        <view class="seq">
+          <text>{{index+1 < 10 ? '0'+(index+1) : index+1}}</text>
+        </view>
+        <!--名字-->
+        <view class="song_name" data-id="{{item.id}}">
+          <text>{{ item.name }}</text>
+          <view>
+            <text class="sq">SQ</text>
+            <text class="sq_bar">{{item.ar[0].name}} - {{item.al.name}}</text>
+          </view>
+        </view>
+        <!--播放器-->
+        <view class="youtube">
+          <view class="iconfont icon-Youtube"></view>
+        </view>
+        <!--更多-->
+        <view class="more">
+          <view class="iconfont icon-caidan2"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

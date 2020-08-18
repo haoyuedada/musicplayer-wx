@@ -1,0 +1,80 @@
+.main_body{
+  padding-top: 63rpx;
+  position: relative;
+  bottom: 164rpx;
+  z-index: 9999;
+  background: #EFEFEF;
+  border-top-left-radius: 48rpx;
+  border-top-right-radius: 48rpx;
+}
+.header_img{
+}
+.header_img>image{
+  width: 100%;
+  height:300px;
+}
+.header_icon{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 186rpx;
+}
+.icon_item>.iconfont{
+  font-size:69rpx;
+  color:white
+}
+.icon_item>text{
+  cursor: text;
+  color: #fff;
+  font-size: 10px;
+}
+.song_item{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  width: 100%;
+}
+.seq{
+  padding-left: 25rpx;
+  color: #D44033;
+  line-height: 70rpx;
+  width: 10%;
+  font-size: 36rpx;
+}
+.song_name{
+  width:65%;
+  position: relative;
+  top: 6px;
+  right: 15px;
+}
+.song_name>text{
+  font-size: 37rpx;
+  letter-spacing: 2px;
+}
+.youtube{
+  position: relative;
+  top: 7px;
+}
+.more{
+  position: relative;
+  top: 7px;
+}
+.sq{
+  font-size: 20rpx;
+  font-weight: 559;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+  padding: 0px 2px 0px 2px;
+}
+.sq_bar{
+  font-size: 28rpx;
+  padding-left: 11rpx;
+  padding-top: 12rpx;
+  margin-top: 18rpx;
+  color: #878789;
+}
+.iconfont{
+  font-size: 61rpx;
+  color: #878789;
+}

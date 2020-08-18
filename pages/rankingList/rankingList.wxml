@@ -1,0 +1,34 @@
+<view class="main">
+  <!--榜单推荐-->
+  <view class="bangdan">
+    <view class="bangdan_title">
+      <text>榜单推荐</text>
+    </view>
+    <view class="bangdan_item">
+      <view wx:for="{{ bangdan }}" wx:key="index">
+        <view class="bangdan_img">
+          <image mode="widthFix" src="{{item.coverImgUrl}}"></image>
+        </view>
+        <view class="bangdan_txt">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <!--官方榜-->
+  <view class="guanfang">
+    <view class="guanfang_title">
+      <text>官方榜</text>
+    </view>
+    <view class="guanfang_main">
+      <view class="guanfang_item" wx:for="{{guanfang}}" wx:key="index">
+        <view class="guanfang_img" data-id="{{item.id}}" bindtap="openNewView">
+          <image mode="widthFix" src="{{item.coverImgUrl}}"></image>
+        </view>
+        <view class="guanfang_right">
+          <view class="guanfang_list" wx:for="{{item.tracks}}" wx:key="index">
+            <text>{{index+1}}.{{ item.first}} - {{item.second}}</text>
+          </view>
+        </view>       
+      </view>
+    </view>
+  </view>
+</view>

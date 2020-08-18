@@ -1,0 +1,67 @@
+.bangdan_item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-around;
+}
+.bangdan_item>view {
+  width: 30%;
+  margin-bottom: 20rpx;
+}
+.bangdan_img {
+  position: relative;
+}
+.bangdan_img image {
+  width: 100%;
+  border-radius: 15rpx;
+}
+.bangdan_title{
+  padding: 4px 0px 4px 0px;
+}
+.bangdan_title>text{
+  margin-left: 9px;
+  font-weight: bold;
+}
+.bangdan_txt{
+
+}
+.guanfang_title{
+  font-weight: bold;
+  padding: 2px 0px 3px 0px;
+}
+.guanfang{
+  padding: 2px 6px 2px 6px;
+}
+.guanfang_main{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-around;
+}
+.guanfang_item{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.guanfang_img{
+  position: relative;
+  width: 40%;
+}
+.guanfang_img>image{
+  width:100%;
+  border-radius: 15rpx;
+}
+.guanfang_right{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-left: 16px;
+  color: #8A8A8A;
+  width:60%;
+}
+.guanfang_right>view{
+  height: 20%;
+}
+.guanfang_list>text{
+  width: 100%;
+}
