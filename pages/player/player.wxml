@@ -34,7 +34,7 @@
       <image src='../../img/cm2_play_btn_prev@2x.png' />
   </view>
   <view class='action-item'>
-      <image src='../../img/cm2_fm_btn_play@2x.png' style="width:200rpx;height:200rpx;position:relative;top:-53rpx;"/>
+      <image src="{{playicon}}" style="width:200rpx;height:200rpx;position:relative;top:-53rpx;" bindtap="clickStart"/>
   </view>
   <view class='action-item'>
       <image src='../../img/cm2_fm_btn_next@2x.png' />

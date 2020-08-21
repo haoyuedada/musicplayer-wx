@@ -46,7 +46,7 @@ page{
 }
 .menus2{
   height: 8%;
-  top: 50%;
+  top: 48%;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -62,7 +62,7 @@ page{
 }
 .slide{
   position: relative;
-  top: 46%;
+  top: 44%;
 }
 .slide>progress{
   width: 85%;

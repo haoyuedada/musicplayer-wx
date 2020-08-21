@@ -8,7 +8,9 @@ Page({
   data: {
     bgimg:"",
     songId:"",
-    songUrl:''
+    songUrl:'',
+    isSonging:true,
+    playicon:"../../img/cm2_fm_btn_play@2x.png"
   },
   getSongInfo:function(options){
     let _this = this;
@@ -37,6 +39,21 @@ Page({
         myaudio.play();
       }
     })
+  },
+  clickStart:function(){
+    if(this.data.isSonging){
+      myaudio.pause();
+      this.setData({
+        isSonging:false,
+        playicon:"../../img/cm2_fm_btn_pause@2x.png"
+      })
+    }else{
+      myaudio.play();
+      this.setData({
+        isSonging:true,
+        playicon:"../../img/cm2_fm_btn_play@2x.png"
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
